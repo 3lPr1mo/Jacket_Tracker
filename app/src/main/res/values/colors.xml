@@ -2,4 +2,11 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="Button_Color">#A1734E</color>
+    <color name="Backgroud_Color">#E5E7ED</color>
+    <color name="Nav_Brackgroud">#313C45</color>
+    <color name="Nav_pick">#C4928A</color>
+    <color name="Inventory_Color">#A6A8AF</color>
+    <color name="InventoryItem_Color">#AFB2BE</color>
+    <color name="InventoryTitles_Color">#898B94</color>
 </resources>
