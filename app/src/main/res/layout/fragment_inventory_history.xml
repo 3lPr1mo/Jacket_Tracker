@@ -11,6 +11,7 @@
         android:orientation="vertical"
         android:background="@color/Backgroud_Color">
 
+
         <TextView
             android:id="@+id/textView"
             android:layout_width="match_parent"
@@ -103,12 +104,41 @@
                 android:textSize="18dp"
                 android:textColor="@color/white"/>
         </LinearLayout>
-
-        <LinearLayout
+        <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_margin="10dp"
-            android:orientation="vertical"
-            android:background="@color/Inventory_Color"></LinearLayout>
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:orientation="vertical"
+                android:background="@color/Inventory_Color">
+                <fragment
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:name="com.example.jacket_tracker.InventoryItem"
+                    tools:layout="@layout/fragment_inventory_item">
+                </fragment>
+                <fragment
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:name="com.example.jacket_tracker.InventoryItem"
+                    tools:layout="@layout/fragment_inventory_item">
+                </fragment>
+                <fragment
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:name="com.example.jacket_tracker.InventoryItem"
+                    tools:layout="@layout/fragment_inventory_item">
+                </fragment>
+                <fragment
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:name="com.example.jacket_tracker.InventoryItem"
+                    tools:layout="@layout/fragment_inventory_item">
+                </fragment>
+            </LinearLayout>
+        </ScrollView>
+
     </LinearLayout>
 </FrameLayout>

@@ -7,6 +7,6 @@
     <color name="Nav_Brackgroud">#313C45</color>
     <color name="Nav_pick">#C4928A</color>
     <color name="Inventory_Color">#A6A8AF</color>
-    <color name="InventoryItem_Color">#AFB2BE</color>
+    <color name="InventoryItem_Color">#BEC1CC</color>
     <color name="InventoryTitles_Color">#898B94</color>
 </resources>
