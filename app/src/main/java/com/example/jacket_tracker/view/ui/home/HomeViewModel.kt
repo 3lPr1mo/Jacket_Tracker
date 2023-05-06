@@ -1,4 +1,4 @@
-package com.example.jacket_tracker.ui.home
+package com.example.jacket_tracker.view.ui.home
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData

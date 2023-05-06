@@ -1,4 +1,4 @@
-package com.example.jacket_tracker.ui.statistics
+package com.example.jacket_tracker.view.ui.statistics
 
 import androidx.lifecycle.ViewModelProvider
 import android.os.Bundle

@@ -1,13 +1,13 @@
-package com.example.jacket_tracker.ui.addJacket
+package com.example.jacket_tracker.view.ui.inventory
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 
-class AddJacketViewModel : ViewModel() {
+class InventoryViewModel : ViewModel() {
 
     private val _text = MutableLiveData<String>().apply {
-        value = "This is notifications Fragment"
+        value = "This is dashboard Fragment"
     }
     val text: LiveData<String> = _text
 }

@@ -1,4 +1,4 @@
-package com.example.jacket_tracker.ui.inventory
+package com.example.jacket_tracker.view.ui.inventory
 
 import android.os.Bundle
 import android.view.LayoutInflater

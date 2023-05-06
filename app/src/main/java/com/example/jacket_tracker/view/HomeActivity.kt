@@ -1,4 +1,4 @@
-package com.example.jacket_tracker
+package com.example.jacket_tracker.view
 
 import android.os.Bundle
 import com.google.android.material.bottomnavigation.BottomNavigationView
@@ -7,6 +7,7 @@ import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
+import com.example.jacket_tracker.R
 import com.example.jacket_tracker.databinding.ActivityHomeBinding
 
 class HomeActivity : AppCompatActivity() {
