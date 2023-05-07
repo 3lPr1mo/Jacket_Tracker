@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "759242018277",
+    "project_id": "jacket-tracker-cbb9e",
+    "storage_bucket": "jacket-tracker-cbb9e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:759242018277:android:be7a95b52ebdaee7b8730c",
+        "android_client_info": {
+          "package_name": "com.example.jacket_tracker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "759242018277-elij68jn956rkssd7ffeiu52qbn8pkk0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAySA0eaXr2T8sIUHVnv3Uhz4ucafV3ybo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "759242018277-elij68jn956rkssd7ffeiu52qbn8pkk0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
