@@ -64,17 +64,43 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Your Name"/>
+                        android:text="@string/firstname"/>
 
                     <EditText
-                        android:id="@+id/editText"
+                        android:id="@+id/edFirstName"
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
+                        android:layout_height="50dp"
                         android:layout_gravity="center"
                         android:layout_marginTop="5dp"
                         android:ems="10"
                         android:gravity="center"
-                        android:hint="Ej: Juan Valdéz"
+                        android:hint="Ej: Juan"
+                        android:inputType="text" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:paddingBottom="10dp"
+                    android:layout_weight="0.2"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/lastname"/>
+
+                    <EditText
+                        android:id="@+id/edLastName"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:hint="Ej: Valdéz"
                         android:inputType="text" />
 
                 </LinearLayout>
@@ -90,12 +116,12 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Citizenship Card"/>
+                        android:text="@string/citizenship_card"/>
 
                     <EditText
                         android:id="@+id/identification_editText"
                         android:layout_width="match_parent"
-                        android:layout_height="0dp"
+                        android:layout_height="50dp"
                         android:layout_marginTop="5dp"
                         android:layout_weight="0.4"
                         android:ems="10"
@@ -116,7 +142,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Password"/>
+                        android:text="@string/password"/>
 
                     <EditText
                         android:id="@+id/editTextPassword"
@@ -142,7 +168,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Email"/>
+                        android:text="@string/email"/>
 
                     <EditText
                         android:id="@+id/emailEditText"
@@ -161,7 +187,7 @@
                     android:id="@+id/btnRegister"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Register"/>
+                    android:text="@string/register"/>
 
             </LinearLayout>
 
