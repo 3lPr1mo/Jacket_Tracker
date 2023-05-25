@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".view.RegisterActivity">
+    tools:context=".ui.view.RegisterActivity"
+    android:background="@color/white">
 
     <LinearLayout
         android:layout_width="316dp"
@@ -74,6 +75,8 @@
                         android:layout_marginTop="5dp"
                         android:ems="10"
                         android:gravity="center"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/InventoryTitles_Color"
                         android:hint="Ej: Juan"
                         android:inputType="text" />
 
@@ -100,6 +103,8 @@
                         android:layout_marginTop="5dp"
                         android:ems="10"
                         android:gravity="center"
+                        android:textColorHint="@color/InventoryTitles_Color"
+                        android:textColor="@color/black"
                         android:hint="Ej: Valdéz"
                         android:inputType="text" />
 
@@ -126,6 +131,8 @@
                         android:layout_weight="0.4"
                         android:ems="10"
                         android:gravity="center"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/InventoryTitles_Color"
                         android:hint="12638123"
                         android:inputType="textPassword" />
 
@@ -150,6 +157,8 @@
                         android:layout_height="0dp"
                         android:layout_marginTop="5dp"
                         android:layout_weight="0.4"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/InventoryTitles_Color"
                         android:ems="10"
                         android:gravity="center"
                         android:hint="******"
@@ -176,6 +185,8 @@
                         android:layout_height="0dp"
                         android:layout_marginTop="5dp"
                         android:layout_weight="0.4"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/InventoryTitles_Color"
                         android:ems="10"
                         android:gravity="center"
                         android:hint="juanvalez@email.com"
@@ -184,6 +195,7 @@
                 </LinearLayout>
 
                 <Button
+                    android:textColor="@color/white"
                     android:id="@+id/btnRegister"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
