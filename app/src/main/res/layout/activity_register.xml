@@ -68,7 +68,7 @@
                         android:text="@string/firstname"/>
 
                     <EditText
-                        android:id="@+id/edFirstName"
+                        android:id="@+id/firstname_edt"
                         android:layout_width="match_parent"
                         android:layout_height="50dp"
                         android:layout_gravity="center"
@@ -96,7 +96,7 @@
                         android:text="@string/lastname"/>
 
                     <EditText
-                        android:id="@+id/edLastName"
+                        android:id="@+id/lastname_edt"
                         android:layout_width="match_parent"
                         android:layout_height="50dp"
                         android:layout_gravity="center"
@@ -124,7 +124,7 @@
                         android:text="@string/citizenship_card"/>
 
                     <EditText
-                        android:id="@+id/identification_editText"
+                        android:id="@+id/id_edt"
                         android:layout_width="match_parent"
                         android:layout_height="50dp"
                         android:layout_marginTop="5dp"
@@ -152,7 +152,7 @@
                         android:text="@string/password"/>
 
                     <EditText
-                        android:id="@+id/editTextPassword"
+                        android:id="@+id/passwordRegister_edt"
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
                         android:layout_marginTop="5dp"
@@ -180,7 +180,7 @@
                         android:text="@string/email"/>
 
                     <EditText
-                        android:id="@+id/emailEditText"
+                        android:id="@+id/email_edt"
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
                         android:layout_marginTop="5dp"
@@ -190,7 +190,7 @@
                         android:ems="10"
                         android:gravity="center"
                         android:hint="juanvalez@email.com"
-                        android:inputType="textPassword" />
+                        android:inputType="textEmailAddress" />
 
                 </LinearLayout>
 

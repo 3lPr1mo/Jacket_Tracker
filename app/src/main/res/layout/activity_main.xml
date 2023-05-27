@@ -38,7 +38,7 @@
             android:textSize="30dp" />
 
         <EditText
-            android:id="@+id/editTextText"
+            android:id="@+id/email_edt"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_gravity="center"
@@ -48,12 +48,12 @@
             android:ems="10"
             android:gravity="center"
             android:textColorHint="@color/InventoryTitles_Color"
-            android:hint="UserName"
+            android:hint="Email"
             android:inputType="text" />
 
         <EditText
             android:textColor="@color/black"
-            android:id="@+id/editTextTextPassword"
+            android:id="@+id/password_edt"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_marginTop="5dp"
@@ -65,7 +65,7 @@
             android:inputType="textPassword" />
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/loginBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
