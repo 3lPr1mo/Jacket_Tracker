@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".view.RegisterActivity">
+    tools:context=".ui.view.RegisterActivity"
+    android:background="@color/white">
 
     <LinearLayout
         android:layout_width="316dp"
@@ -64,17 +65,47 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Your Name"/>
+                        android:text="@string/firstname"/>
 
                     <EditText
-                        android:id="@+id/editText"
+                        android:id="@+id/firstname_edt"
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
+                        android:layout_height="50dp"
                         android:layout_gravity="center"
                         android:layout_marginTop="5dp"
                         android:ems="10"
                         android:gravity="center"
-                        android:hint="Ej: Juan Valdéz"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/InventoryTitles_Color"
+                        android:hint="Ej: Juan"
+                        android:inputType="text" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:paddingBottom="10dp"
+                    android:layout_weight="0.2"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/lastname"/>
+
+                    <EditText
+                        android:id="@+id/lastname_edt"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:textColorHint="@color/InventoryTitles_Color"
+                        android:textColor="@color/black"
+                        android:hint="Ej: Valdéz"
                         android:inputType="text" />
 
                 </LinearLayout>
@@ -90,16 +121,18 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Citizenship Card"/>
+                        android:text="@string/citizenship_card"/>
 
                     <EditText
-                        android:id="@+id/identification_editText"
+                        android:id="@+id/id_edt"
                         android:layout_width="match_parent"
-                        android:layout_height="0dp"
+                        android:layout_height="50dp"
                         android:layout_marginTop="5dp"
                         android:layout_weight="0.4"
                         android:ems="10"
                         android:gravity="center"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/InventoryTitles_Color"
                         android:hint="12638123"
                         android:inputType="textPassword" />
 
@@ -116,14 +149,16 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Password"/>
+                        android:text="@string/password"/>
 
                     <EditText
-                        android:id="@+id/editTextPassword"
+                        android:id="@+id/passwordRegister_edt"
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
                         android:layout_marginTop="5dp"
                         android:layout_weight="0.4"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/InventoryTitles_Color"
                         android:ems="10"
                         android:gravity="center"
                         android:hint="******"
@@ -142,26 +177,29 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Email"/>
+                        android:text="@string/email"/>
 
                     <EditText
-                        android:id="@+id/emailEditText"
+                        android:id="@+id/email_edt"
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
                         android:layout_marginTop="5dp"
                         android:layout_weight="0.4"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/InventoryTitles_Color"
                         android:ems="10"
                         android:gravity="center"
                         android:hint="juanvalez@email.com"
-                        android:inputType="textPassword" />
+                        android:inputType="textEmailAddress" />
 
                 </LinearLayout>
 
                 <Button
+                    android:textColor="@color/white"
                     android:id="@+id/btnRegister"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Register"/>
+                    android:text="@string/register"/>
 
             </LinearLayout>
 
