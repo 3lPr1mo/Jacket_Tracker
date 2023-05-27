@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".view.Statistics_view">
+    tools:context=".ui.view.Statistics_view">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -80,22 +80,22 @@
                 android:orientation="vertical">
 
                 <fragment
-                    android:name="com.example.jacket_tracker.view.Statistics_Item"
+                    android:name="com.example.jacket_tracker.ui.view.Statistics_Item"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
                     tools:layout="@layout/fragment_statistics__item"></fragment>
                 <fragment
-                    android:name="com.example.jacket_tracker.view.Statistics_Item"
+                    android:name="com.example.jacket_tracker.ui.view.Statistics_Item"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
                     tools:layout="@layout/fragment_statistics__item"></fragment>
                 <fragment
-                    android:name="com.example.jacket_tracker.view.Statistics_Item"
+                    android:name="com.example.jacket_tracker.ui.view.Statistics_Item"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
                     tools:layout="@layout/fragment_statistics__item"></fragment>
                 <fragment
-                    android:name="com.example.jacket_tracker.view.Statistics_Item"
+                    android:name="com.example.jacket_tracker.ui.view.Statistics_Item"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
                     tools:layout="@layout/fragment_statistics__item"></fragment>
@@ -109,7 +109,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="15dp"
-            android:name="com.example.jacket_tracker.view.Statistics_Item"
+            android:name="com.example.jacket_tracker.ui.view.Statistics_Item"
             tools:layout="@layout/fragment_statistics__item"></fragment>
 
 

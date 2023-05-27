@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".view.NewType_Add_Menu">
+    tools:context=".ui.view.NewType_Add_Menu">
 
     <LinearLayout
         android:layout_margin="10dp"
