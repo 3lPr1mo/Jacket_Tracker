@@ -6,28 +6,28 @@ import retrofit2.converter.gson.GsonConverterFactory
 object RetrofitHelper {
     fun getRetrofitUser(): Retrofit {
         return Retrofit.Builder()
-            .baseUrl("http://localhost:3000/users")
+            .baseUrl("http://localhost:3000/users/")
             .addConverterFactory(GsonConverterFactory.create())
             .build()
     }
 
     fun getRetrofitJacket(): Retrofit {
         return Retrofit.Builder()
-            .baseUrl("http://localhost:3000/jacket")
+            .baseUrl("http://localhost:3000/jacket/")
             .addConverterFactory(GsonConverterFactory.create())
             .build()
     }
 
     fun getRetrofitDelivery(): Retrofit {
         return Retrofit.Builder()
-            .baseUrl("http://localhost:3000/delivery")
+            .baseUrl("http://localhost:3000/delivery/")
             .addConverterFactory(GsonConverterFactory.create())
             .build()
     }
 
     fun getRetrofitCategoryJacket(): Retrofit {
         return Retrofit.Builder()
-            .baseUrl("http://localhost:3000/category")
+            .baseUrl("http://localhost:3000/category/")
             .addConverterFactory(GsonConverterFactory.create())
             .build()
     }
