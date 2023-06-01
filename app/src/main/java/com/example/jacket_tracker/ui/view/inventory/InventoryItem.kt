@@ -5,9 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import com.example.jacket_tracker.R
-import com.example.jacket_tracker.ui.view.inventory.ARG_PARAM_INVENTORY_ITEM_1
-import com.example.jacket_tracker.ui.view.inventory.ARG_PARAM_INVENTORY_ITEM_2
+import com.example.jacket_tracker.databinding.FragmentInventoryItemBinding
 
 /**
  * A simple [Fragment] subclass.
@@ -16,17 +14,25 @@ import com.example.jacket_tracker.ui.view.inventory.ARG_PARAM_INVENTORY_ITEM_2
  */
 private const val ARG_PARAM_INVENTORY_ITEM_1 = "param1"
 private const val ARG_PARAM_INVENTORY_ITEM_2 = "param2"
+private const val ARG_PARAM_INVENTORY_ITEM_3 = "param3"
+private const val ARG_PARAM_INVENTORY_ITEM_4 = "param4"
 
 class InventoryItem : Fragment() {
     // TODO: Rename and change types of parameters
-    private var param1: String? = null
-    private var param2: String? = null
+    private var paraType: String? = null
+    private var paraQuality: String? = null
+    private var paramCost: String? = null
+    private var paramDate: String? = null
+    private var _binding: FragmentInventoryItemBinding? = null
+    private val binding get() = _binding!!
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         arguments?.let {
-            param1 = it.getString(ARG_PARAM_INVENTORY_ITEM_1)
-            param2 = it.getString(ARG_PARAM_INVENTORY_ITEM_2)
+            paraType = it.getString(ARG_PARAM_INVENTORY_ITEM_1)
+            paraQuality = it.getString(ARG_PARAM_INVENTORY_ITEM_2)
+            paramCost = it.getString(ARG_PARAM_INVENTORY_ITEM_3)
+            paramDate = it.getString(ARG_PARAM_INVENTORY_ITEM_4)
         }
     }
 
@@ -34,26 +40,19 @@ class InventoryItem : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_inventory_item, container, false)
+        _binding = FragmentInventoryItemBinding.inflate(inflater, container, false)
+        return binding.root
     }
 
     companion object {
-        /**
-         * Use this factory method to create a new instance of
-         * this fragment using the provided parameters.
-         *
-         * @param param1 Parameter 1.
-         * @param param2 Parameter 2.
-         * @return A new instance of fragment InventoryItem.
-         */
-        // TODO: Rename and change types and number of parameters
         @JvmStatic
-        fun newInstance(param1: String, param2: String) =
+        fun newInstance(type: Int, quality: Int, cost: Int, date: String) =
             InventoryItem().apply {
                 arguments = Bundle().apply {
-                    putString(ARG_PARAM_INVENTORY_ITEM_1, param1)
-                    putString(ARG_PARAM_INVENTORY_ITEM_2, param2)
+                    putString(ARG_PARAM_INVENTORY_ITEM_1, type.toString())
+                    putString(ARG_PARAM_INVENTORY_ITEM_2, quality.toString())
+                    putString(ARG_PARAM_INVENTORY_ITEM_1, cost.toString())
+                    putString(ARG_PARAM_INVENTORY_ITEM_2, date)
                 }
             }
     }
