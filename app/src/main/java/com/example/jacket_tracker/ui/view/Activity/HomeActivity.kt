@@ -1,17 +1,17 @@
-package com.example.jacket_tracker.ui.view
+package com.example.jacket_tracker.ui.view.Activity
 
 import android.os.Bundle
 import android.widget.FrameLayout
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
-import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
-import androidx.navigation.ui.setupActionBarWithNavController
-import androidx.navigation.ui.setupWithNavController
 import com.example.jacket_tracker.R
 import com.example.jacket_tracker.databinding.ActivityHomeBinding
+import com.example.jacket_tracker.ui.view.addJacket.Add_Menu
 import com.example.jacket_tracker.ui.view.home.HomeFragment
+import com.example.jacket_tracker.ui.view.inventory.InventoryHistory
+import com.example.jacket_tracker.ui.view.statistics.Statistics_view
 
 class HomeActivity : AppCompatActivity() {
 
@@ -23,8 +23,6 @@ class HomeActivity : AppCompatActivity() {
 
         binding = ActivityHomeBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
-        setSupportActionBar(binding.toolbar)
 
         val navView: BottomNavigationView = binding.navView
         fragmentContainer = binding.fragmentContainer
@@ -41,8 +39,36 @@ class HomeActivity : AppCompatActivity() {
             )
         )
 
+
         val homeFragment = HomeFragment()
         setFragment(homeFragment)
+
+        val nav : BottomNavigationView = binding.navView
+        nav.setOnItemSelectedListener {
+            when (it.itemId){
+                R.id.navigation_home ->{   //fragment home
+                    val homeFragment = HomeFragment()
+                    setFragment(homeFragment)
+                    true
+                }
+                R.id.navigation_dashboard->{ //inventory
+                    val inventory = InventoryHistory()
+                    setFragment(inventory)
+                    true
+                }
+                R.id.navigation_notifications->{ // add jacket
+                    val addjacket = Add_Menu()
+                    setFragment(addjacket)
+                    true
+                }
+                R.id.navigation_statistics ->{ // statistics
+                    val statistics = Statistics_view()
+                    setFragment(statistics)
+                    true
+                }
+                else -> {false}
+            }
+        }
 
         //setupActionBarWithNavController(navController, appBarConfiguration)
         //navView.setupWithNavController(navController)

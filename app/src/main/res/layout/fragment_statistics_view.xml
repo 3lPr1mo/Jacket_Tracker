@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    tools:context=".ui.view.Statistics_view">
+    tools:context=".ui.view.statistics.Statistics_view">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -78,37 +78,10 @@
                 android:layout_marginHorizontal="15dp"
                 android:layout_weight="1"
                 android:background="@color/Statistics_Background"
-                android:orientation="vertical">
-
-                <fragment
-                    android:name="com.example.jacket_tracker.ui.view.Statistics_Item"
-                    android:layout_width="match_parent"
-                    android:layout_height="50dp"
-                    tools:layout="@layout/fragment_statistics__item"></fragment>
-                <fragment
-                    android:name="com.example.jacket_tracker.ui.view.Statistics_Item"
-                    android:layout_width="match_parent"
-                    android:layout_height="50dp"
-                    tools:layout="@layout/fragment_statistics__item"></fragment>
-                <fragment
-                    android:name="com.example.jacket_tracker.ui.view.Statistics_Item"
-                    android:layout_width="match_parent"
-                    android:layout_height="50dp"
-                    tools:layout="@layout/fragment_statistics__item"></fragment>
-                <fragment
-                    android:name="com.example.jacket_tracker.ui.view.Statistics_Item"
-                    android:layout_width="match_parent"
-                    android:layout_height="50dp"
-                    tools:layout="@layout/fragment_statistics__item"></fragment>
-            </LinearLayout>
+                android:orientation="vertical"/>
         </ScrollView>
 
-        <fragment
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="15dp"
-            android:name="com.example.jacket_tracker.ui.view.Statistics_Item"
-            tools:layout="@layout/fragment_statistics__item"></fragment>
+
 
 
         <Button

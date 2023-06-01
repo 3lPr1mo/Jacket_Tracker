@@ -1,4 +1,4 @@
-package com.example.jacket_tracker.ui.view
+package com.example.jacket_tracker.ui.view.addJacket
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -9,24 +9,24 @@ import com.example.jacket_tracker.R
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-private const val ARG_INVHIS1 = "param1"
-private const val ARG_INVHIS2 = "param2"
+private const val ARG_ADD1 = "param1"
+private const val ARG_ADD2 = "param2"
 
 /**
  * A simple [Fragment] subclass.
- * Use the [InventoryHistory.newInstance] factory method to
+ * Use the [Add_Menu.newInstance] factory method to
  * create an instance of this fragment.
  */
-class InventoryHistory : Fragment() {
+class Add_Menu : Fragment() {
     // TODO: Rename and change types of parameters
-    private var param1: String? = null
-    private var param2: String? = null
+    private var add1: String? = null
+    private var add2: String? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         arguments?.let {
-            param1 = it.getString(ARG_INVHIS1)
-            param2 = it.getString(ARG_INVHIS2)
+            add1 = it.getString(ARG_ADD1)
+            add2 = it.getString(ARG_ADD2)
         }
     }
 
@@ -35,7 +35,7 @@ class InventoryHistory : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_inventory_history, container, false)
+        return inflater.inflate(R.layout.fragment_add__menu, container, false)
     }
 
     companion object {
@@ -45,15 +45,15 @@ class InventoryHistory : Fragment() {
          *
          * @param param1 Parameter 1.
          * @param param2 Parameter 2.
-         * @return A new instance of fragment InventoryHistory.
+         * @return A new instance of fragment Add_Menu.
          */
         // TODO: Rename and change types and number of parameters
         @JvmStatic
         fun newInstance(param1: String, param2: String) =
-            InventoryHistory().apply {
+            Add_Menu().apply {
                 arguments = Bundle().apply {
-                    putString(ARG_INVHIS1, param1)
-                    putString(ARG_INVHIS2, param2)
+                    putString(ARG_ADD1, param1)
+                    putString(ARG_ADD2, param2)
                 }
             }
     }

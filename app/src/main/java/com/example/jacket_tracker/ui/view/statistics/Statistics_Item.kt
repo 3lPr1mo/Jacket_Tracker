@@ -1,4 +1,4 @@
-package com.example.jacket_tracker.ui.view
+package com.example.jacket_tracker.ui.view.statistics
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment

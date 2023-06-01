@@ -1,9 +1,8 @@
-package com.example.jacket_tracker.ui.view
+package com.example.jacket_tracker.ui.view.Login_Register
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.text.Spannable
 import android.text.SpannableString
 import android.text.style.UnderlineSpan
 import android.widget.TextView

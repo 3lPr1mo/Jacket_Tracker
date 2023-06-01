@@ -1,4 +1,4 @@
-package com.example.jacket_tracker.ui.view
+package com.example.jacket_tracker.ui.view.Activity
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -9,8 +9,8 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
-import androidx.lifecycle.ViewModelProvider
 import com.example.jacket_tracker.R
+import com.example.jacket_tracker.ui.view.Login_Register.RegisterActivity
 import com.example.jacket_tracker.ui.viewmodel.MainViewModel
 import com.google.firebase.auth.FirebaseAuth
 

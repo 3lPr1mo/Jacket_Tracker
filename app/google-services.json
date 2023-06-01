@@ -1,36 +1,26 @@
 {
   "project_info": {
-    "project_number": "759242018277",
-    "project_id": "jacket-tracker-cbb9e",
-    "storage_bucket": "jacket-tracker-cbb9e.appspot.com"
+    "project_number": "564826548866",
+    "project_id": "jacket-tracker-f3052",
+    "storage_bucket": "jacket-tracker-f3052.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:759242018277:android:be7a95b52ebdaee7b8730c",
+        "mobilesdk_app_id": "1:564826548866:android:63dd2152c5bc34cccda29b",
         "android_client_info": {
           "package_name": "com.example.jacket_tracker"
         }
       },
-      "oauth_client": [
-        {
-          "client_id": "759242018277-elij68jn956rkssd7ffeiu52qbn8pkk0.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
+      "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyAySA0eaXr2T8sIUHVnv3Uhz4ucafV3ybo"
+          "current_key": "AIzaSyCH5hjUYcGhN4_y8nnGweJz4PbMzpL2OCU"
         }
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": [
-            {
-              "client_id": "759242018277-elij68jn956rkssd7ffeiu52qbn8pkk0.apps.googleusercontent.com",
-              "client_type": 3
-            }
-          ]
+          "other_platform_oauth_client": []
         }
       }
     }

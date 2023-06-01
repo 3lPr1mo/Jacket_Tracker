@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    tools:context=".ui.view.NewType_Add_Menu">
+    tools:context=".ui.view.addJacket.NewType_Add_Menu">
 
     <LinearLayout
         android:layout_margin="10dp"

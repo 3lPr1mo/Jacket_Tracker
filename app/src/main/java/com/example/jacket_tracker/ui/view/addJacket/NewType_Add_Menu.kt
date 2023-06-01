@@ -1,4 +1,4 @@
-package com.example.jacket_tracker.ui.view
+package com.example.jacket_tracker.ui.view.addJacket
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import com.example.jacket_tracker.R
 import com.example.jacket_tracker.databinding.FragmentNewTypeAddMenuBinding
+import com.example.jacket_tracker.ui.view.DatePickerFragment
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER

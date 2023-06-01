@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".ui.view.Login_view"
+    tools:context=".ui.view.Login_Register.Login_view"
     android:background="#e5e7ed"
     >
 

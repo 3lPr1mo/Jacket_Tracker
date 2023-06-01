@@ -1,11 +1,11 @@
-package com.example.jacket_tracker.ui.view
+package com.example.jacket_tracker.ui.view.Login_Register
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
-import androidx.lifecycle.ViewModelProvider
 import com.example.jacket_tracker.databinding.ActivityRegisterBinding
+import com.example.jacket_tracker.ui.view.Activity.MainActivity
 import com.google.firebase.auth.FirebaseAuth
 
 class RegisterActivity : AppCompatActivity() {

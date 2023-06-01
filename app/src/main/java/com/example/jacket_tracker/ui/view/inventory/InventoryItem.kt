@@ -1,32 +1,32 @@
-package com.example.jacket_tracker.ui.view
+package com.example.jacket_tracker.ui.view.inventory
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
 import com.example.jacket_tracker.R
-
-// TODO: Rename parameter arguments, choose names that match
-// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-private const val ARG_ADD1 = "param1"
-private const val ARG_ADD2 = "param2"
+import com.example.jacket_tracker.ui.view.inventory.ARG_PARAM_INVENTORY_ITEM_1
+import com.example.jacket_tracker.ui.view.inventory.ARG_PARAM_INVENTORY_ITEM_2
 
 /**
  * A simple [Fragment] subclass.
- * Use the [Add_Menu.newInstance] factory method to
+ * Use the [InventoryItem.newInstance] factory method to
  * create an instance of this fragment.
  */
-class Add_Menu : Fragment() {
+private const val ARG_PARAM_INVENTORY_ITEM_1 = "param1"
+private const val ARG_PARAM_INVENTORY_ITEM_2 = "param2"
+
+class InventoryItem : Fragment() {
     // TODO: Rename and change types of parameters
-    private var add1: String? = null
-    private var add2: String? = null
+    private var param1: String? = null
+    private var param2: String? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         arguments?.let {
-            add1 = it.getString(ARG_ADD1)
-            add2 = it.getString(ARG_ADD2)
+            param1 = it.getString(ARG_PARAM_INVENTORY_ITEM_1)
+            param2 = it.getString(ARG_PARAM_INVENTORY_ITEM_2)
         }
     }
 
@@ -35,7 +35,7 @@ class Add_Menu : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_add__menu, container, false)
+        return inflater.inflate(R.layout.fragment_inventory_item, container, false)
     }
 
     companion object {
@@ -45,15 +45,15 @@ class Add_Menu : Fragment() {
          *
          * @param param1 Parameter 1.
          * @param param2 Parameter 2.
-         * @return A new instance of fragment Add_Menu.
+         * @return A new instance of fragment InventoryItem.
          */
         // TODO: Rename and change types and number of parameters
         @JvmStatic
         fun newInstance(param1: String, param2: String) =
-            Add_Menu().apply {
+            InventoryItem().apply {
                 arguments = Bundle().apply {
-                    putString(ARG_ADD1, param1)
-                    putString(ARG_ADD2, param2)
+                    putString(ARG_PARAM_INVENTORY_ITEM_1, param1)
+                    putString(ARG_PARAM_INVENTORY_ITEM_2, param2)
                 }
             }
     }
