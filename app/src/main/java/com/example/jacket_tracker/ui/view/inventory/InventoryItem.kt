@@ -23,6 +23,7 @@ class InventoryItem : Fragment() {
     private var paraQuality: String? = null
     private var paramCost: String? = null
     var paramDate: String? = null
+
     private var _binding: FragmentInventoryItemBinding? = null
     private val binding get() = _binding!!
 
@@ -54,10 +55,10 @@ class InventoryItem : Fragment() {
 
     companion object {
         @JvmStatic
-        fun newInstance(type: Int, quality: Int, cost: Int, date: String) =
+        fun newInstance(type: String, quality: Int, cost: Int, date: String) =
             InventoryItem().apply {
                 arguments = Bundle().apply {
-                    putString(ARG_PARAM_INVENTORY_ITEM_1, type.toString())
+                    putString(ARG_PARAM_INVENTORY_ITEM_1, type)
                     putString(ARG_PARAM_INVENTORY_ITEM_2, quality.toString())
                     putString(ARG_PARAM_INVENTORY_ITEM_3, cost.toString())
                     putString(ARG_PARAM_INVENTORY_ITEM_4, date)
