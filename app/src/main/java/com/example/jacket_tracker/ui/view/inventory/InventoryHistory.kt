@@ -34,6 +34,10 @@ class InventoryHistory :Fragment () {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        binding.searchButton.setOnClickListener {
+            filtrarFragmentosPorFecha(binding.fecha.toString())
+        }
+
         model.getJackets().observe(viewLifecycleOwner){
             for (jacket in it){
                 val fragment = InventoryItem.newInstance(jacket.id,jacket.quantityDeliveried,jacket.price,jacket.deliveryDate)
@@ -41,6 +45,24 @@ class InventoryHistory :Fragment () {
             }
         }
 
+    }
+
+    private fun filtrarFragmentosPorFecha(fecha: String) {
+        val fragmentos = childFragmentManager.fragments
+
+        for (fragmento in fragmentos) {
+            if (fragmento is InventoryItem) {
+                val transaction = childFragmentManager.beginTransaction()
+                var fecha = fecha + "T05:00:00.000Z"
+                if (fragmento.paramDate?.contains(fecha, ignoreCase = true) == true) {
+                    transaction.show(fragmento)
+                } else {
+                    transaction.hide(fragmento)
+                }
+
+                transaction.commit()
+            }
+        }
     }
     companion object {
         fun newInstance(param1: String, param2: String) =

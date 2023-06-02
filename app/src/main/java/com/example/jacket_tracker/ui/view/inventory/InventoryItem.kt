@@ -22,7 +22,7 @@ class InventoryItem : Fragment() {
     private var paraType: String? = null
     private var paraQuality: String? = null
     private var paramCost: String? = null
-    private var paramDate: String? = null
+    var paramDate: String? = null
     private var _binding: FragmentInventoryItemBinding? = null
     private val binding get() = _binding!!
 
@@ -34,6 +34,14 @@ class InventoryItem : Fragment() {
             paramCost = it.getString(ARG_PARAM_INVENTORY_ITEM_3)
             paramDate = it.getString(ARG_PARAM_INVENTORY_ITEM_4)
         }
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        binding.textView6.text = paraType
+        binding.textView7.text = paraQuality
+        binding.textView8.text = paramCost
+        binding.textView9.text = paramDate
     }
 
     override fun onCreateView(
@@ -51,8 +59,8 @@ class InventoryItem : Fragment() {
                 arguments = Bundle().apply {
                     putString(ARG_PARAM_INVENTORY_ITEM_1, type.toString())
                     putString(ARG_PARAM_INVENTORY_ITEM_2, quality.toString())
-                    putString(ARG_PARAM_INVENTORY_ITEM_1, cost.toString())
-                    putString(ARG_PARAM_INVENTORY_ITEM_2, date)
+                    putString(ARG_PARAM_INVENTORY_ITEM_3, cost.toString())
+                    putString(ARG_PARAM_INVENTORY_ITEM_4, date)
                 }
             }
     }
